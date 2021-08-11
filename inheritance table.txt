@@ -1,0 +1,23 @@
+Base class visibility || public derivation || private derivation || protected derivation
+==========================================================================================
+private               ||  Not inherited    ||   Not inherited    || Not inherited
+==========================================================================================
+protected             ||  Protected        ||   Private          || protected
+==========================================================================================
+public                ||  Public           ||   Private          || protected
+==========================================================================================
+                      ||<------------------DERIVED CLASS VISIBILITY-------------------->||
+
+class alpha
+{
+    private:
+        ...... //optional
+        ...... //visible to member functions of same class
+        ...... //within its class
+    protected:
+        ...... //visible to member functions
+        ...... //of its own and derived class
+    public:
+        ...... //visible to all functions
+        ...... //in the program
+}
